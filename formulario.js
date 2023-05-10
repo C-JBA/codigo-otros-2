@@ -22,8 +22,8 @@ formulario.onsubmit = function(e) {
   }
 
 if (nombre.length > 0 
-  && (edad > 18 
-    && edad < 120) ) {
+  && (edad >= 18 
+    && edad <= 120) ) {
   agregarInvitado(nombre, edad, nacionalidad);
   }
 }
